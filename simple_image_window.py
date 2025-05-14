@@ -1,6 +1,7 @@
 import dearpygui.dearpygui as dpg
 
 def main_window():
+	# STARTING DPG STUFF
 	dpg.create_context()
 	dpg.create_viewport(title="Images in DearPyGui", width=840, height=660)
 	dpg.setup_dearpygui()
