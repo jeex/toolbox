@@ -6,6 +6,8 @@ def main_window():
 	dpg.create_viewport(title="Images in DearPyGui", width=840, height=660)
 	dpg.setup_dearpygui()
 
+
+	# TODO start
 	# make a window in the main window
 	window_tag = "my_image_window" # the unique id of this window
 	with dpg.window(label="The image", width=320, height=400, tag=window_tag):
@@ -22,7 +24,10 @@ def main_window():
 
 	# use the window_tag to put this texture in a specific window
 	dpg.add_image(texture_id, parent=window_tag)
+	# END TODO
 
+
+	# RUNNING THE MAIN LOOP OF dpg
 	dpg.show_viewport()
 	dpg.start_dearpygui()
 	# end of window
